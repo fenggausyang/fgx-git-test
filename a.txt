@@ -1,1 +1,8 @@
-hello world this is master.
+link_directories 命令是用来告诉 CMake 在链接可执行文件或库文件时，应该到哪些目录下去寻找需要链接的库文件。这个命令可以指定一个或多个目录。
+
+add_subdirectory 命令用于向 CMake 构建系统添加子目录。当在一个 CMakeLists.txt 文件中调用 add_subdirectory 命令时，CMake 会进入指定的子目录并在该子目录中执行对应的 CMakeLists.txt 文件，生成该子目录的构建规则。
+
+target_link_libraries: 用于为目标指定链接的库。例如，如果目标需要链接一个外部的库文件，可以使用 target_link_libraries 命令将该库文件链接到目标中，让目标能够使用该库文件提供的功能。
+
+
+add_library 是 CMake 中用于创建库文件的命令。它用于将一组源文件编译成一个库文件，以供其他目标或项目使用。
